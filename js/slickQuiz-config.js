@@ -6,91 +6,92 @@ var quizJSON = {
     "info": {
         "main":    "",
         "results": "<h5>Learn More</h5><p>Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>",
-        "level1":  {"title": "Cooking", "descShort":"STIRRING IT UP!", "descLong":"Break out your apron and cookbook and take a shot at preparing your favorite meal. Better yet, try a brand new recipe!", image: "Cooking.jpg"},
-        "level2":  {"title": "Travel", "descShort":"HITTING THE ROAD!", "descLong":"Here, there, everywhere! There are sights to be seen all across the country. Take a shot at planning the trip of your dreams or visiting an inspiring national monument! ", image: "Travel.jpg"},
-        "level3":  {"title": "Outdoors", "descShort":"ENJOYING THE GREAT OUTDOORS!", "descLong":"Lace up your sneakers and head outside. Take a shot at enjoying the seasonal foliage or gazing at the stars.", image: "Outdoors.jpg"},
-        "level4":  {"title": "Music", "descShort":"ENJOYING SOME NEW TUNES!",  "descLong":"Music is food for the soul. Take a shot at browsing your local record store or catching a live performance of your favorite musical act!", image: "Music.jpg"},
-        "level5":  {"title": "Art", "descShort":"UNLEASHING YOUR CREATIVITY!",  "descLong":"It’s fun to create, learn, and grow. Whether it’s poetry, painting, or exploring an art museum, take a shot at taking in new and exciting culture!", image: "Art.jpg"} // no comma here
+        "level1":  {"title": "Pineapple", "descShort":"PINEAPPLE", "descLong":"Pineapple is the party fruit. Pineapple is like, &#8220;What&#8217;s uuuuuup?!&#8221; and totally does its own thing. Have you looked at pineapple lately? It looks crazy and it doesn&#8217;t care what anyone thinks. You&#8217;re a true individual and when you walk in the room everyone is like, &#8220;Whaaaaaaaaaat.&#8221;", image: "result-pineapple.jpg"},
+        "level2":  {"title": "Banana", "descShort":"BANANA", "descLong":"Bananas are hilarious. JUST LOOK AT IT. It&#8217;s the ONE fruit that doesn&#8217;t take itself too seriously. While all the other fruits are, frankly, snobby as hell, banana is just doin&#8217; its own thing, living its best life, being so chill. Bananas have a great sense of humor. When a banana&#8217;s on the scene, everything is cool.", image: "result-banana.jpg"},
+        "level3":  {"title": "Apple", "descShort":"APPLE", "descLong":"Apples are classic, classy, and sophisticated. Apples know what&#8217;s up. You can&#8217;t mess with an apple. You try to mess with an apple and you&#8217;ll regret it. You try to mess with an apple and you get taken TO SCHOOL. Apples just have it together and know what&#8217;s up.", image: "result-apple.jpg"},
+        "level4":  {"title": "Strawberry", "descShort":"STRAWBERRY",  "descLong":"Strawberries are tiny berry bosses. When the strawberries come in, it&#8217;s serious. SERIOUS FUN. Is there anything more fun and flirty than a strawberry? Everyone loves them. But not everyone can have them, especially when they&#8217;re not in season. You&#8217;re IN DEMAND.", image: "result-strawberry.jpg"},
+        "level5":  {"title": "Cherry", "descShort":"CHERRY",  "descLong":"Wow. Just wow. Cherries are really cool. In the fruit world, cherries are very intimidating. Cherries are the impossibly cool and good looking fruit of the produce world. Effortlessly chic, good personality, not trying too hard, but BLAM, really making a statement. Not everyone can be a cherry. Not everyone SHOULD be a cherry. But you, my friend, you&#8217;re one of the cherries.", image: "result-cherries.jpg"},
+        "level6":  {"title": "Oranges", "descShort":"ORANGES",  "descLong":"Oranges are smart as hell. And don&#39;t tell the other fruits, but they&#39;re a little bit perfect. Technically nothing is perfect, but you kind of are. DON&#39;T TELL ANYONE THOUGH BECAUSE IT&#39;S NOT FAIR. As an orange, you&#39;re ready for life&#39;s challenges and there&#39;s nothing that can stop you. But again, please, THIS IS OUR LITTLE SECRET.", image: "result-oranges.jpg"} // no comma here// no comma here
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "WHERE WOULD YOU SPEND AN IDEAL AFTERNOON OF RELAXATION?",
+            "q": "PICK AN EMOTION",
             "a": [
-                {"option": "Lake",      "correct": true, "value":"3", "image": "quiz-thumbimg-relaxation1.jpg"},
-                {"option": "City park",     "correct": true, "value":"4", "image": "quiz-thumbimg-relaxation2.jpg"},
-                {"option": "Café",      "correct": true, "value":"2", "image": "quiz-thumbimg-relaxation3.jpg"},
-				{"option": "Kitchen",      "correct": true, "value":"5", "image": "quiz-thumbimg-relaxation4.jpg"},
-                {"option": "Movies",     "correct": true, "value":"2", "image": "quiz-thumbimg-relaxation5.jpg"},
-				{"option": "Movies",     "correct": true, "value":"1", "image": "quiz-thumbimg-relaxation6.jpg"} // no comma here
+                {"option": "option1",      "correct": true, "value":"2", "image": "quiz-thumbimg-emotion1.jpg"},
+                {"option": "option2",     "correct": true, "value":"5", "image": "quiz-thumbimg-emotion2.jpg"},
+                {"option": "option3",      "correct": true, "value":"0", "image": "quiz-thumbimg-emotion3.jpg"},
+				{"option": "option4",      "correct": true, "value":"3", "image": "quiz-thumbimg-emotion4.jpg"},
+                {"option": "option5",     "correct": true, "value":"1", "image": "quiz-thumbimg-emotion5.jpg"},
+				{"option": "option6",     "correct": true, "value":"4", "image": "quiz-thumbimg-emotion6.jpg"} // no comma here
             ],
         },
         { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "IF YOU WERE A PAIR OF SHOES, WHAT KIND WOULD YOU BE?  ",
+            "q": "How do you feel about dancing? ",
             "a": [
-                {"option": "Heels", "correct": true, "value":"1", "image": "quiz-thumbimg-pair1.jpg"},
-                {"option": "Work boots", "correct": true, "value":"3", "image": "quiz-thumbimg-pair2.jpg"},
-                {"option": "Golf shoes", "correct": true, "value":"3", "image": "quiz-thumbimg-pair3.jpg"},
-                {"option": "Flip-flops", "correct": true, "value":"4", "image": "quiz-thumbimg-pair4.jpg"},
-				{"option": "Slippers", "correct": true, "value":"5", "image": "quiz-thumbimg-pair5.jpg"},
-				{"option": "Clown shoes", "correct": true, "value":"2", "image": "quiz-thumbimg-pair6.jpg"} // no comma here
+                {"option": "Heels", "correct": true, "value":"4", "image": "quiz-thumbimg-dance1.jpg"},
+                {"option": "Work boots", "correct": true, "value":"0", "image": "quiz-thumbimg-dance2.jpg"},
+                {"option": "Golf shoes", "correct": true, "value":"5", "image": "quiz-thumbimg-dance3.jpg"},
+                {"option": "Flip-flops", "correct": true, "value":"3", "image": "quiz-thumbimg-dance4.jpg"},
+				{"option": "Slippers", "correct": true, "value":"1", "image": "quiz-thumbimg-dance5.jpg"},
+				{"option": "Clown shoes", "correct": true, "value":"2", "image": "quiz-thumbimg-dance6.jpg"} // no comma here
             ],
         },
         { // Question 3 - Multiple Choice, Multiple True Answers, Select All
-            "q": "YOU JUST WON $100 ON A SCRATCH-OFF. WHAT DO YOU DO WITH IT?",
+            "q": "WHAT WOULD YOU BRING TO A DESERT ISLAND?",
             "a": [
-                {"option": "Donate to charity",           "correct": true, "value":"4", "image": "quiz-thumbimg-scratch1.jpg"},
-                {"option": "Redecorate",                  "correct": true, "value":"1", "image": "quiz-thumbimg-scratch2.jpg"},
-                {"option": "Invest",  "correct": true, "value":"4", "image": "quiz-thumbimg-scratch3.jpg"},
-                {"option": "Go to a concert",          "correct": true, "value":"2", "image": "quiz-thumbimg-scratch4.jpg"},
-				{"option": "Travel",  "correct": true, "value":"3", "image": "quiz-thumbimg-scratch5.jpg"},	
-				{"option": "Buy books",          "correct": true, "value":"5", "image": "quiz-thumbimg-scratch6.jpg"}// no comma here
+                {"option": "Donate to charity",           "correct": true, "value":"1", "image": "quiz-thumbimg-island1.jpg"},
+                {"option": "Redecorate",                  "correct": true, "value":"2", "image": "quiz-thumbimg-island2.jpg"},
+                {"option": "Invest",  "correct": true, "value":"3", "image": "quiz-thumbimg-island3.jpg"},
+                {"option": "Go to a concert",          "correct": true, "value":"5", "image": "quiz-thumbimg-island4.jpg"},
+				{"option": "Travel",  "correct": true, "value":"4", "image": "quiz-thumbimg-island5.jpg"},	
+				{"option": "Buy books",          "correct": true, "value":"0", "image": "quiz-thumbimg-island6.jpg"}// no comma here
             ],
 
         },
         { // Question 4
-            "q": "WHAT WOULD BE YOUR DREAM HOME?",
+            "q": "WHICH ANIMAL'S LOOK ARE YOU FEELING?",
             "a": [
-                {"option": "Luxury apartment",    "correct": true, "value":"1", "image": "quiz-thumbimg-dream1.jpg"},
-                {"option": "Beach house",     "correct": true, "value":"4", "image": "quiz-thumbimg-dream2.jpg"},
-                {"option": "Log cabin in woods",      "correct": true, "value":"3", "image": "quiz-thumbimg-dream3.jpg"},
-				{"option": "Tent",      "correct": true, "value":"2", "image": "quiz-thumbimg-dream4.jpg"},
-                {"option": "Ranch",   "correct": true, "value":"5", "image": "quiz-thumbimg-dream5.jpg"},
-				{"option": "Studio",   "correct": true, "value":"1", "image": "quiz-thumbimg-dream6.jpg"} // no comma here
+                {"option": "Luxury apartment",    "correct": true, "value":"4", "image": "quiz-thumbimg-animal1.jpg"},
+                {"option": "Beach house",     "correct": true, "value":"3", "image": "quiz-thumbimg-animal2.jpg"},
+                {"option": "Log cabin in woods",      "correct": true, "value":"0", "image": "quiz-thumbimg-animal3.jpg"},
+				{"option": "Tent",      "correct": true, "value":"5", "image": "quiz-thumbimg-animal4.jpg"},
+                {"option": "Ranch",   "correct": true, "value":"2", "image": "quiz-thumbimg-animal5.jpg"},
+				{"option": "Studio",   "correct": true, "value":"1", "image": "quiz-thumbimg-animal6.jpg"} // no comma here
             ],
         },
         { // Question 5
-            "q": "IF YOU COULD PURSUE ANY CAREER, WHAT WOULD IT BE?",
+            "q": "PICK A VEGETABLE",
             "a": [
-                {"option": "Teacher",    "correct": true, "value":"4", "image": "quiz-thumbimg-career1.jpg"},
-				{"option": "Actor",    "correct": true, "value":"2", "image": "quiz-thumbimg-career2.jpg"},
-				{"option": "Baker",    "correct": true, "value":"5", "image": "quiz-thumbimg-career3.jpg"},
-				{"option": "Artist",    "correct": true, "value":"1", "image": "quiz-thumbimg-career4.jpg"},
-				{"option": "Mayor",    "correct": true, "value":"4", "image": "quiz-thumbimg-career5.jpg"},
-                {"option": "Park ranger",     "correct": true, "value":"3", "image": "quiz-thumbimg-career6.jpg"} // no comma here
+                {"option": "Teacher",    "correct": true, "value":"4", "image": "quiz-thumbimg-veg1.jpg"},
+				{"option": "Actor",    "correct": true, "value":"5", "image": "quiz-thumbimg-veg2.jpg"},
+				{"option": "Baker",    "correct": true, "value":"0", "image": "quiz-thumbimg-veg3.jpg"},
+				{"option": "Artist",    "correct": true, "value":"1", "image": "quiz-thumbimg-veg4.jpg"},
+				{"option": "Mayor",    "correct": true, "value":"2", "image": "quiz-thumbimg-veg5.jpg"},
+                {"option": "Park ranger",     "correct": true, "value":"3", "image": "quiz-thumbimg-veg6.jpg"} // no comma here
             ],
 
         },
 		{ // Question 6
-            "q": "WHICH HOLIDAY DO YOU LOOK FORWARD TO THE MOST?",
+            "q": "PICK A PLANET",
             "a": [
-                {"option": "New Year’s Eve",    "correct": true, "value":"2", "image": "quiz-thumbimg-holiday1.jpg"},
-				{"option": "Fourth of July",    "correct": true, "value":"3", "image": "quiz-thumbimg-holiday2.jpg"},
-				{"option": "Halloween",    "correct": true, "value":"1", "image": "quiz-thumbimg-holiday3.jpg"},
-				{"option": "Thanksgiving",    "correct": true, "value":"5", "image": "quiz-thumbimg-holiday4.jpg"},
-				{"option": "Valentine’s Day",    "correct": true, "value":"5", "image": "quiz-thumbimg-holiday5.jpg"},
-                {"option": "Labor Day",     "correct": true, "value":"4", "image": "quiz-thumbimg-holiday6.jpg"} // no comma here
+                {"option": "New Year’s Eve",    "correct": true, "value":"0", "image": "quiz-thumbimg-planet1.jpg"},
+				{"option": "Fourth of July",    "correct": true, "value":"4", "image": "quiz-thumbimg-planet2.jpg"},
+				{"option": "Halloween",    "correct": true, "value":"3", "image": "quiz-thumbimg-planet3.jpg"},
+				{"option": "Thanksgiving",    "correct": true, "value":"1", "image": "quiz-thumbimg-planet4.jpg"},
+				{"option": "Valentine’s Day",    "correct": true, "value":"5", "image": "quiz-thumbimg-planet5.jpg"},
+                {"option": "Labor Day",     "correct": true, "value":"2", "image": "quiz-thumbimg-planet6.jpg"} // no comma here
             ],
 
         }, 
 		{ // Question 7
-            "q": "WHERE WOULD YOU LOVE TO SPEND A WEEKEND?",
+            "q": "WHAT ARE YOU MOST LIKELY DOING AT A PARTY?",
             "a": [
-                {"option": "New York City",    "correct": true, "value":"1", "image": "quiz-thumbimg-weekend1.jpg"},
-				{"option": "Seattle",    "correct": true, "value":"2", "image": "quiz-thumbimg-weekend2.jpg"},
-				{"option": "San Francisco",    "correct": true, "value":"3", "image": "quiz-thumbimg-weekend3.jpg"},
-				{"option": "Washington, D.C.",    "correct": true, "value":"4", "image": "quiz-thumbimg-weekend4.jpg"},
-				{"option": "Austin",    "correct": true, "value":"5", "image": "quiz-thumbimg-weekend5.jpg"},
-                {"option": "Nashville",     "correct": true, "value":"2", "image": "quiz-thumbimg-weekend6.jpg"} // no comma here
+                {"option": "New York City",    "correct": true, "value":"5", "image": "quiz-thumbimg-party1.jpg"},
+				{"option": "Seattle",    "correct": true, "value":"0", "image": "quiz-thumbimg-party2.jpg"},
+				{"option": "San Francisco",    "correct": true, "value":"2", "image": "quiz-thumbimg-party3.jpg"},
+				{"option": "Washington, D.C.",    "correct": true, "value":"1", "image": "quiz-thumbimg-party4.jpg"},
+				{"option": "Austin",    "correct": true, "value":"3", "image": "quiz-thumbimg-party5.jpg"},
+                {"option": "Nashville",     "correct": true, "value":"4", "image": "quiz-thumbimg-party6.jpg"} // no comma here
             ],
 
         } // no comma here// no comma here
