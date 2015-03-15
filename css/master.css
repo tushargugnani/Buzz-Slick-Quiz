@@ -134,6 +134,7 @@ ul.answers  li{
 	margin-left: 5px;
 	margin-top: 5px;
 	display: none;
+	width: 40px;
 }
 
 input[type=checkbox]{

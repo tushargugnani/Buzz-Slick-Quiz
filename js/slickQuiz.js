@@ -649,7 +649,17 @@
                 if (plugin.config.disableRanking) {
                     $(_quizLevel).remove()
                 } else {
-                    var levels    = [
+            		var level;
+                	$.each(quizValues.info.levels,function(index){
+                		var rangeStart = quizValues.info.levels[index].rangeStart;
+                		var rangeEnd = quizValues.info.levels[index].rangeEnd;
+                		if (plugin.method.inRange(rangeStart, rangeEnd, totalPointValue)){
+                			level = quizValues.info.levels[index];
+                			return false;
+                		}
+                		//cconsole.log("ere")
+                	});
+                    /*var levels    = [
                                         quizValues.info.level1, // 80-100%
                                         quizValues.info.level2, // 60-79%
                                         quizValues.info.level3, // 40-59%
@@ -669,17 +679,17 @@
 							levelRank = 1;
 						}
 
-                        levelText = $.isNumeric(levelRank) ? levels[levelRank] : '';
+                        levelText = $.isNumeric(levelRank) ? levels[levelRank] : '';*/
 					
 					//Add short description
-					$('#resultsHeader').append('<h3>'+levels[levelRank].descShort+'</h3>');
-					$('#resultsBody #resultDesc #descLong').html(levels[levelRank].descLong);
-					var bg = "url(images/"+levels[levelRank].image+")";
+					$('#resultsHeader').append('<h3>'+level.descShort+'</h3>');
+					$('#resultsBody #resultDesc #descLong').html(level.descLong);
+					var bg = "url(images/"+level.image+")";
 					$('#resultsBody #resultPicture').css('background-image',bg);
 					
 					
-                    $(_quizLevel + ' span').html(levelText);
-                    $(_quizLevel).addClass('level' + levelRank);
+                   // $(_quizLevel + ' span').html(levelText);
+                   // $(_quizLevel).addClass('level' + levelRank);
 					
 	
                 }
