@@ -1,11 +1,26 @@
-A jQuery plugin for creating pretty, dynamic quizzes.
+A jQuery plugin for creating pretty, dynamic quizzes like BuzzFeed Quiz
 
 
 ## Demo And Usage
 
+Disclaimer: Most of the options and parameters are same as the SlickQuiz Plugin as I have extended that plugin into Buzz Slick Quiz
+
 See `index.html` for demo and suggested HTML structure (the element class names are the important part).
 
 See `js/slickQuiz-config.js` to set up your quiz copy and questions.
+
+slickQuiz-config files needs following information for the Quiz to work properly.
+
+1. questions, there will be multiple answers with option of tagging image against it and providing it a numeric value.
+(You can add any number of questions in the config file)
+
+2. The possible result options available for quiz, for each result you need to provide rangeStart and rangeEnd for the plugin to decide the total count value of quiz falls into which result option.
+
+
+
+The below options form SlickQiuz plugin are unchanged (I have not tested them all if they work well with the extension, I will test them all eventually)
+
+--------
 
 To initialize your quiz:
 
@@ -180,4 +195,4 @@ See `js/slickQuiz-config.js`
     }
 
 
-Created by [Julie Cameron](http://juliecameron.com) while previously employed at [Quicken Loans](http://quickenloans.com), Detroit, MI
+
